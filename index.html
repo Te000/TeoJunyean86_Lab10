@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mr. Burger: Order Here!</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+
+        <script type="text/javascript" src="js/jquery.js"></script> 
+         <script type="text/javascript" src="js/my_jquery.js"></script>
+        <script type="text/javascript" src="js/AJAXforLab5.js"></script>
+
+
+    </head>
+<body>
+      <header><h1 class="choices" id="h1">“Burgers and fries the way they were always meant to be”</h1></header>
+    <img src ="https://pbs.twimg.com/profile_images/2700907726/a4c8a2d4402ff2e882debe8c6eeb1918_400x400.png" style="border-radius:50%; padding-bottom: 15px;">
+    <img src ="http://wallpapersdsc.net/wp-content/uploads/2016/09/Burger-Wallpapers-HD.jpg" style="width: 930px; height: 450px">
+    <ul id="menu">
+        <li id="home">Home</li>
+        <li id="orderNow">Order Now!</li>
+        <li id="comment">Leave a Comment</li>
+        <li id="register">Register!</li>
+        <li id="orderHistory">Past Orders</li>
+    </ul>
+     
+    <footer>
+        <p class="footer box">All Rights Reserved. MR BURGER CO."</p>
+        </p>
+    </footer>    
+
+    <div class='user'>
+    </div>
+
+    <div id="form">
+
+   <div class="choices">
+    <p class="orange box">Step 1: Select your Burger!</br>
+     <select id="burger">
+        <option value="0" selected disabled >Select from the options below</option>
+        
+     </select>
+    </p>
+    <p class="gray box">Step 2: Select your Bread!</br>
+     <select id="bread">
+        <option value="0" selected disabled >Select from the options below</option>
+     </select>
+    </p>
+    <p class="orange box">Step 3: Select your Size!</br>
+     <select id="size">
+        <option value="0" selected disabled >Select from the options below</option>
+  
+     </select>
+    </p>
+    <p>Do you want some Mayo on your burger?</br>
+        <Input type="radio" name="mayo" id="yesToMayo" value="With Mayo" checked="checked"/>YESSSS!</br>
+        <Input type="radio" name="mayo" value="No"/>No way!</br>
+    </p>
+    <p class="red box">How about some Ketchup?</p>
+        <Input type="radio" name="ketchup" id="yesToKetchup" value="With Ketchup" checked="checked"/>YESSSS!</br>
+        <Input type="radio" name="ketchup" value="No"/>No way!</br>
+    </p>
+    <p class="yellow box">You must want some mustard then?</p>
+        <Input type="radio" name="mustard" id="yesToMustard" value="With Mustard" checked="checked"/>YESSSS!</br>
+        <Input type="radio" name="mustard" value="No"/>No way!</br>
+    </p>
+    <span>
+    <p class="linear box" >Step 4: Choose whatever toppings you want!</p>
+        <span id="topping"></span>
+    </span>
+    <span><p class="orange box">Step 5: Choose whatever sauces you want!</p>
+        <span id="sauce"></span>
+
+    <p id="choice4">Do you want some fries to go with your burger?</br>
+        <Input type="radio" name="fries" id="yesToFries" value="With Fries" checked="checked"/>YESSSS!</br>
+        <Input type="radio" name="fries" value="No"/>No way!</br>
+    <p>Last step: How many of these orders do you want?</br>
+     <input type="text" id="validate"/>
+    </p>
+    <p>
+     <input type="button" name ="submit" value="Add to Cart" id="addToCart" class="box">
+     <input type="button" name ="cancel" value="Reset Order" id="resetButton" class="box">
+    </p>
+    <div id="orderSummary"></div>
+</div>
+</div>
+
+<div id="pastOrders">
+    <h2>Your Past Orders!</h2>
+    <div id="oldOrders"></div>
+</div>
+
+<span id="modalRegistration" class="modal">
+
+                <h2>Register at Mr. Burger</h2>
+            
+
+                    <p>User Name </br>
+                        
+                        <input type="text" id="user-register">
+                    
+                    
+                    <p>Email </br>
+                        
+                        <input type="email" id="email-register">
+                    
+                    <p>Password </br>
+                        
+                        <input type="password" id="password-register">
+                    
+                
+                    <p id="errorMessage"></p>
+                    <span class="box" id="registerButton">Register</span>
+
+</span>
+
+<span id="login" class="modal">
+
+                <h2>Login at Mr. Burger</h2>
+            
+
+                    <p>User Name </br>
+                        
+                        <input type="text" id="user-login">
+                    
+                    <p>Password </br>
+                        
+                        <input type="password" id="passwrd-login"></br></br>
+                    <input type="checkbox" id="rememberMe" > Remember me
+          </br>
+                    
+                
+                    <p id="errorMessage"></p>
+                    <span class="box" id="loginMainButton">Login</span>
+                    <span class="box" id="logoutButton">Log out</span>
+
+</span>
+
+<span id="commentSection">
+        <h2>Leave a Comment below!</h2>
+        <p id="error"></p>
+         <p>What is your name?</br>
+            <input type="text" id="leaveAName" placeholder="Your name here...">
+        <p>
+        <p>Tell us what you think about our services!</br>
+            <input type="text" id="leaveAComment" placeholder="Your thoughts here...">
+        <p>Please tell us your e-mail for us to reply to you promptly!</br>
+            <input type="text" id="leaveAMail" placeholder="E-mail">
+        <p>
+
+            <input type ="button" id="enterButton" value ="Send" class="box"></br>
+        <p id="errorMessage"></p>
+        
+        <span id="loginSection">
+            <p>Please Login, or Register!</p>
+            <input type="text" id="userLogin" placeholder="Username">
+                    <input type="password" id="passwrdLogin" placeholder="Password"></br></br>
+                    <span class="box" id="loginButton">Log in</span>
+
+        </span>
+        <h1>Comments</h1>
+        <span id="commentArchive"></span>
+</span>
+
+
+                    
+
+
+</span>
+
+</body>
+
+</html>
+

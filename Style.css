@@ -1,0 +1,142 @@
+
+p .orange {
+	border-color: orange;
+	border-width: 5px;
+	border-style: solid;
+}
+
+#h1 {
+    border-color: orange;
+    border-style: solid;
+    color: white;
+    background-color: orange;
+
+}
+
+.box {
+    margin: auto;
+    padding: 10px;
+
+}
+
+.orange {
+    background: orange;
+}
+.gray {
+	background: gray;
+}
+.yellow {
+	background: yellow;
+}
+.red {
+	background: red;
+}
+.linear {
+	background:linear-gradient(to right, green, red, yellow , white);
+}
+
+.choices {
+	text-align: center;
+}
+
+.error {
+	color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url(http://files.softicons.com/download/application-icons/free-developer-icons-by-designkode/png/32/error.png);
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+.order {
+	color: #4F8A10;
+    background-color: #DFF2BF;
+	background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEMaR99X_KShHdMb404_XsAfXmu1eycHwWK8wtKZaa0fLT3DC-);
+	background-repeat: no-repeat;
+    background-position: 30% 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+#addToCart {
+    background-color: green;
+    color: white;
+}
+
+#resetButton {
+    background-color: red;
+    color: white;
+}
+
+ul#menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #CCC;
+    overflow: hidden;
+}
+ul#menu li{
+    float: left;
+    padding: 20px;
+}
+
+ul#menu li:hover, li.selected{
+    background-color: #999;
+    color: white;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #FF8C00;
+    color: white;
+
+}
+
+#enterButton {
+    background-color: green;
+    color:white;
+}
+
+#registerButton {
+    background-color: orange;
+    color:white;
+}
+
+#loginButton {
+    background-color: orange;
+    color:white;
+}
+
+#loginMainButton {
+    background-color: orange;
+    color:white;
+}
+
+#newComment {
+background-color: green;
+}
+
+#logoutButton {
+    background-color: red;
+    color:white;
+}
+
+blockquote{
+  font: 14px/20px italic Times, serif;
+  padding: 8px;
+  background-color: #faebbc;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin: 5px;
+
+  text-indent: 25px;
+  }
+  
+.commentBox {
+    padding: 8px;
+    
+}
+
+
+ 
